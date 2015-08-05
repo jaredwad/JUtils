@@ -191,8 +191,15 @@ namespace JUtils
 	/// </summary>
 	public class MathSet {
 
+		public double Min { get { return Min; } }
+		public double Max { get { return Max; } }
+		public double Sum { get { return sum; } }
+		public double Mean { get { return mean; } }
+		public double Count { get { return count; } }
+		public double Median { get { return median; } }
 		public double StdDev { get { return stdDev; } }
-		public double FstDev { get { return fstDev; } }
+//		public double FstDev { get { return fstDev; } }
+		public double Variance { get { return variance; } }
 
 		double min;
 		double max;
@@ -201,7 +208,7 @@ namespace JUtils
 		double count;
 		double median;
 		double stdDev;
-		double fstDev;
+//		double fstDev;
 		double variance;
 
 		List<double> data;
